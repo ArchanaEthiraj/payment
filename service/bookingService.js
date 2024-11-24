@@ -4,11 +4,10 @@ async function bookingGetByIdRes(ids, token) {
   try {
     const getBookingDetail = await axios({
       method: 'get',
-      url: `http://localhost:4001/api/v1/booking/detail/${ids}`,
+      url: `http://localhost:4001/api/v1/booking/view/${ids}`,
       data: {},
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `${token}`
       }
     })
     console.log('getBookingDetail', getBookingDetail)
