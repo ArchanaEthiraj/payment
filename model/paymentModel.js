@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+// PAYMENT SCHEMA
 const payment = new mongoose.Schema(
   {
     bookingId: {

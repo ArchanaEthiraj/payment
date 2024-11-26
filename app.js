@@ -9,7 +9,6 @@ dotEnv.config()
 
 app.use(
   require('morgan')('dev', {
-    // skip: function (req, res) { return res.statusCode < 400 }
   })
 )
 routers(app)

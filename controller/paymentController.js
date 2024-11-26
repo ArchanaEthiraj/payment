@@ -7,11 +7,11 @@ const razorpayInstance = new Razorpay({
   key_secret: '4nw51M2BuFwPB0dixnBXtJx9'
 })
 
+// PAYMENT GATEWAY API
 const paymentGateway = async (req, res) => {
   try {
     const bookingId = req.query.bookingId
     const userId = req.query.userId
-    // let bookingRes = await bookingGetByIdRes(bookingId, req.headers.authorization.split(' ')[1])
 
     const options = {
       amount: parseInt(req.body.amount) * 100,

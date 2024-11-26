@@ -1,5 +1,6 @@
 const axios = require('axios').default
 
+// BOOKING GET BY ID FUNCTION
 async function bookingGetByIdRes(ids, token) {
   try {
     const getBookingDetail = await axios({
